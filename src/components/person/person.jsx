@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { Card, Box, CardContent, CardMedia, CardActions, Typography } from '@mui/material'
+import { Card, Box, CardContent, CardMedia, Typography } from '@mui/material'
 import IconAvailable from '../../assets/icon-available.svg'
 import IconBusy from '../../assets//icon-busy.svg'
 
@@ -31,14 +31,14 @@ const Person = ({ person }) => (
         image={person.image}
       />
     </Box>
-    <CardContent sx={{ padding: '12px', paddingTop: '5px'}} >
+    <CardContent sx={{ padding: '12px', paddingTop: '5px' }} >
       <Typography variant='body2'>
         {`${person.firstName} ${person.lastName}`}
       </Typography>
       <Typography variant='caption' color='text.secondary'>
         {person.location}
       </Typography>
-      <Box sx={{ }}>
+      <Box>
         <Typography variant='caption' component='p' color='text.secondary'>
           {`phone: ${person.phone}`}
         </Typography>

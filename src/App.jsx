@@ -1,12 +1,13 @@
+import { Box } from '@mui/material'
 import { Header } from './components/header'
 import { People } from './components/people'
 import data from './assets/api.json'
 
 const App = () => (
-  <div>
+  <Box>
     <Header />
     <People people={data} />
-  </div>
+  </Box>
 )
 
 export default App
