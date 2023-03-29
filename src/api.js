@@ -4,5 +4,5 @@ export const fetchPeople = () =>
       return response.json();
     })
     .then(function (myJson) {
-      return myJson
+      return myJson;
     });

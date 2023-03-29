@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { Card, Box, CardContent, CardMedia, Typography } from '@mui/material'
 import IconAvailable from '../../assets/icon-available.svg'
@@ -10,7 +8,7 @@ const Person = ({ person }) => (
     width: '200px',
     height: '250px',
   }}>
-    <Box sx={{ padding: '10px 10px 0 10px', }} >
+    <Box sx={{ padding: '10px 10px 0 10px' }} >
       <Box
         sx={{
           position: 'absolute',

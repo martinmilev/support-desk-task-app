@@ -8,7 +8,7 @@ import {
 } from '@mui/material'
 import IconSearch from '../../assets/icon-search.svg'
 
-const Header = () => (
+const Header = ({ onSearch }) => (
   <AppBar>
     <Toolbar>
       <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
@@ -20,6 +20,7 @@ const Header = () => (
         placeholder='Search'
         size='small'
         sx={{ backgroundColor: 'white', paddingInline: '10px' }}
+        onKeyDown={(e) => e.key === 'Enter' && onSearch(e.target.value.toLowerCase())}
         endAdornment={
           <InputAdornment position='end' >
             <img
