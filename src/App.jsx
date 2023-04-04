@@ -21,7 +21,7 @@ const App = () => {
       setPeople(data)
       return
     }
-    
+
     let result = []
     data.forEach((item) => {
       Object.keys(item).forEach((key) => {

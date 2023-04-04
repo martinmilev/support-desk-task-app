@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material"
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
 const theme = createTheme({
   body: {
@@ -23,8 +23,8 @@ const theme = createTheme({
     },
   },
   textField: {
-    background: 'white',
-  }
+    background: "white",
+  },
 });
 
-export default responsiveFontSizes(theme)
+export default responsiveFontSizes(theme);
